@@ -1,0 +1,128 @@
+/* === Tanya's Graded Resume - Custom CSS === */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&family=Merriweather:wght@300&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+  background: linear-gradient(135deg, #f7faff, #e8f1fc);
+  color: #2e2e2e;
+}
+
+h1, h2 {
+  font-family: 'Merriweather', serif;
+  color: #3c096c;
+}
+
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem 1.5rem;
+  position: relative;
+}
+
+/* === Hero Section === */
+.hero {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+  background: linear-gradient(to right, #cdb4db, #ffc8dd);
+  border-bottom-left-radius: 2.5rem;
+  border-bottom-right-radius: 2.5rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #4f0f66;
+}
+
+.hero-buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.hero-buttons .btn {
+  padding: 0.75rem 1.5rem;
+  background: #7b2cbf;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.hero-buttons .btn.secondary {
+  background: #edf6f9;
+  color: #7b2cbf;
+  border: 1px solid #7b2cbf;
+}
+
+.hero-buttons .btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(123, 44, 191, 0.3);
+}
+
+/* === Skills Grid === */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+
+.skill {
+  background: #f4f0ff;
+  border-left: 5px solid #a36cd6;
+  padding: 1rem;
+  border-radius: 10px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+}
+
+/* === Lists / Cards === */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  background: #fff0f6;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  line-height: 1.6;
+}
+
+/* === Contact === */
+.contact a {
+  color: #6a0572;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #7b2cbf;
+  color: white;
+  font-size: 0.9rem;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
