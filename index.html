@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tanya - Graded Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&family=Merriweather:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="hero">
+    <h1>Tanya</h1>
+    <p class="typing-tagline"><span id="typed-text"></span><span class="cursor">|</span></p>
+    <div class="hero-buttons">
+      <a href="#contact" class="btn">Contact</a>
+      <a href="#" class="btn secondary">Download Resume</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="objective">
+      <h2>🎯 Career Objective</h2>
+      <p>Aspiring entrepreneur aiming to build a successful startup and pursue an MBA from a renowned institution. Passionate about learning, leadership, and personal growth through practical exposure and innovation.</p>
+    </section>
+
+    <section class="education">
+      <h2>🎓 Education</h2>
+      <div class="timeline">
+        <div class="edu-item">
+          <h3>BBA – Digital Business & Entrepreneurship</h3>
+          <p>IIM Bangalore — Expected Graduation: [Add Year]</p>
+        </div>
+        <div class="edu-item">
+          <h3>Diploma in Digital Marketing</h3>
+          <p>UpGrad — Sep 2024 to Mar 2025</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills">
+      <h2>🛠️ Skills</h2>
+      <div class="skills-grid">
+        <span>🎨 Canva</span>
+        <span>🌐 WordPress</span>
+        <span>🔍 SEO</span>
+        <span>💸 SEM</span>
+        <span>🗣️ Communication</span>
+        <span>👩‍💼 Leadership</span>
+        <span>🧠 Strategic Thinking</span>
+      </div>
+    </section>
+
+    <section class="achievements">
+      <h2>🏆 Achievements</h2>
+      <ul class="card-list">
+        <li>🎓 School Captain – Grade 12</li>
+        <li>🏅 House Prefect – Grade 11</li>
+        <li>🥇 Multiple Medals in Olympiads & Sports</li>
+        <li>📚 Recognized for leadership in academics & activities</li>
+      </ul>
+    </section>
+
+    <section class="languages">
+      <h2>🌍 Languages</h2>
+      <ul>
+        <li>Hindi – Fluent</li>
+        <li>English – Fluent</li>
+        <li>Marwari – Native</li>
+      </ul>
+    </section>
+
+    <section class="interests">
+      <h2>💖 Personal Interests</h2>
+      <ul>
+        <li>👩‍🍳 Cooking – Creative expression through food</li>
+        <li>💃 Dancing – Passionate about cultural performance</li>
+      </ul>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>📬 Contact Me</h2>
+      <p>📍 Jangir, Chhattisgarh</p>
+      <p>📞 <a href="tel:+917987919974">+91 7987919974</a></p>
+      <p>📧 <a href="mailto:gpraveta@gmail.com">gpraveta@gmail.com</a></p>
+      <p>🔗 <a href="https://linkedin.com/in/praveta-gattani-05760b329" target="_blank">LinkedIn Profile</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Tanya | Built for Graded Assignment 🌟</p>
+  </footer>
+
+  <script>
+    const text = "Entrepreneurial | Curious | Driven to Make Impact";
+    let i = 0;
+    function type() {
+      if (i < text.length) {
+        document.getElementById("typed-text").textContent += text.charAt(i);
+        i++;
+        setTimeout(type, 60);
+      }
+    }
+    type();
+  </script>
+</body>
+
+</html>
